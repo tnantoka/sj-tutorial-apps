@@ -68,9 +68,7 @@ const CGFloat TIP_SIZE = 96.0f;
         SKAction *forever = [SKAction repeatActionForever:animate];
         [self runAction:forever];
     } else {
-        [self runAction:animate completion:^{
-            self.state = SJHeroStateStop;
-        }];
+        [self runAction:animate completion:block];
     }
 }
 
