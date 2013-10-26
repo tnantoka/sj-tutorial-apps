@@ -43,6 +43,8 @@ static inline CGFloat skRand(CGFloat low, CGFloat high) {
     // Physics
     ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:r];
     
+    CGPathRelease(path);
+    
     return ball;
 }
 

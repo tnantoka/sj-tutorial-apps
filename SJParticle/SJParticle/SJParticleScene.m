@@ -70,6 +70,8 @@ static const uint32_t worldCategory = 0x1 << 2;
     //ball.physicsBody.collisionBitMask = swordCategory | ballCategory;
     //ball.physicsBody.contactTestBitMask = swordCategory;
     
+    CGPathRelease(path);
+    
     return ball;
 }
 
